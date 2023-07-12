@@ -1,2 +1,2 @@
 subgraph.yaml
-subgraph.template.yaml
+*.subgraph.template.yaml
