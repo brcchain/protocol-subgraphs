@@ -32,7 +32,7 @@ dataSources:
         - name: EACAggregatorProxy
           file: ./abis/helpers/EACAggregatorProxy.json
       eventHandlers:
-         - event: AssetPriceUpdated(address,uint256,uint256)
+        - event: AssetPriceUpdated(address,uint256,uint256)
           handler: handleAssetPriceUpdated
       file: src/mapping/price-oracle/price-oracle.ts
   # --------------------------------------
