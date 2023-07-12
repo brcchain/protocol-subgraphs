@@ -1,5 +1,5 @@
 {
-  "network": "brc",
+  "network": "mainnet",
   "AaveOracleAddress": "0x34Cc7d35205FFD551b554bb717870df5726Ff544",
   "AaveOracleStartBlock": 1809603,
   "LendingPoolAddressesProviderRegistryAddress": "0xB30A2E566977D336fbb513441049F0b5fB7d16F6",
