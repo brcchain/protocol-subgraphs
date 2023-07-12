@@ -12,7 +12,7 @@ dataSources:
     network: '{{network}}'
     source:
       address: '{{AaveOracleAddress}}'
-      startBlock: { { AaveOracleStartBlock } }
+      startBlock: '{{AaveOracleStartBlock}}'
       abi: AaveOracle
     mapping:
       kind: ethereum/events
@@ -44,7 +44,7 @@ dataSources:
     source:
       address: '{{LendingPoolAddressesProviderRegistryAddress}}'
       abi: LendingPoolAddressesProviderRegistry
-      startBlock: { { LendingPoolAddressesProviderRegistryStartBlock } }
+      startBlock: '{{LendingPoolAddressesProviderRegistryStartBlock}}'
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
