@@ -19,8 +19,13 @@ import { genericPriceUpdate, usdEthPriceUpdate } from '../../helpers/price-updat
 
 // GANACHE
 export function handleAssetPriceUpdated(event: AssetPriceUpdated): void {
-  let oracleAsset = getPriceOracleAsset(event.params._asset.toHexString());
-  genericPriceUpdate(oracleAsset, event.params._price, event);
+  if (event.params._asset.toHexString() == '0x753d2ae4808069d2f29ec5cdf0881d985caef26b') {
+    let priceOracle = getOrInitPriceOracle();
+    usdEthPriceUpdate(priceOracle, event.params._price, event);
+  } else {
+    let oracleAsset = getPriceOracleAsset(event.params._asset.toHexString());
+    genericPriceUpdate(oracleAsset, event.params._price, event);
+  }
 }
 
 export function handleEthPriceUpdated(event: EthPriceUpdated): void {
